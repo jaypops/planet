@@ -20,6 +20,34 @@
   width: 100px;
   height: 100px;
 }
+.style-button{
+  background-color: rgb(99, 142, 221);
+  border: none;
+  border-radius: 20%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.style-button:hover{
+  cursor: pointer;
+  background-color:rgb(72, 117, 201);
+  transition: 0.5s;
+}
+.count_div{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+#mint{
+  margin-top: -30px;
+}
+#minus{
+  margin-right: 10px;
+}
+#plus{
+  margin-left: 10px;
+}
 .mint{
   display: flex;
   justify-content: center;
