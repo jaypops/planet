@@ -81,7 +81,11 @@ nav ul li a{
       display: flex;
       flex-wrap: wrap;
   }
-
+    .wrapper{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
 }
 @media (max-width: 1100px){
   #remove{
@@ -104,8 +108,6 @@ nav ul li a{
     padding-bottom: 40px;
     margin: 1px;
   }
-}
-
 .style-button{
   background-color: rgb(99, 142, 221);
   border: none;
