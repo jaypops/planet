@@ -129,10 +129,13 @@ nav ul li a{
 }
 #mint{
   margin-top: -30px;
+  margin-bottom: 50px;
 }
 #minus{
   margin-right: 10px;
+  margin-bottom: 50px;
 }
 #plus{
   margin-left: 10px;
+  margin-bottom: 50px;
 }
