@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mint.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="logo.jbg"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <title>Planets of the eyes</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+              <nav class="navbar"> 
+              <div class="content">
+                <div class="head">
+                    <div class="logo"><img src="logo.jbg"></div>
+                    <nav class="navbar"> 
+                        <ul class="menu-list">
+                            <div class="icon cancel-btn" id="remove">
+                              <i class="fas fa-times"></i>
+                            </div>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#" class="only">ROADMAP</a></li>
+                            <li><a href="mint.html" class="only">MINT</a></li>
+                            <li><a href="https://opensea.io/collection/planets-of-the-eyes" class="only">OPENSEA</a></li>
+                            <!--<li><p>Wallet address: <span id="wallet-address"></span></p></li>-->
+                            <li><button class="style-button" id="connect" >CONNECT</button></li>
+                            </ul>
+                            <div class="icon menu-btn" id="remove">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="nft">
+          <li><img src="nft1.png" class="box"></li>
+          <li><img src="nft2.png" class="box"></li>
+          <li><img src="nft3.png" class="box"></li>
+        </div>
+        <div class="count_div">
+          <button class='style-button' id="minus">-</button>
+          <span id="count"><span id="counter">0</span></span>
+          <button  class='style-button' id="plus" >+</button>
+        </div>
+        <div class="mint">
+          <input type="button" value="mint" id="mint" class="style-button">
+        </div>
+    </div>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+   <scrip src="https://kit.fontawesome.com/209569d4e0.js" crossorigin="anonymous"></script>
+  <script src="https://mint-js.vercel.app/info.js"></script>
+  <script src="https://mint-js.vercel.app/matic.js"></script>
+</body>
+</html>
