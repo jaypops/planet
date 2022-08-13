@@ -114,24 +114,20 @@ nav ul li a:hover{
 }
 .goal{
   color: #fff;
-}
-.goal p{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  letter-spacing: 0.1em;
-  padding-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
 }
 .goal h2{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  font-weight: bold;
+}
+.goal p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 100px 20px 100px ;
 }
 .main-three h1{
   display: flex;
@@ -223,10 +219,7 @@ hr{
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #fff;
-      font-weight: bold;
-      letter-spacing: 0.1em;
-      margin: 5px;
+      padding: 2px 10px 20px 10px ;
     }
     .main-body{
       color: #fff;
