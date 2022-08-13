@@ -9,7 +9,7 @@
 }
 .wrapper{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(planet2.jpg);
     background-size: cover;
     overflow: hidden;
