@@ -267,6 +267,17 @@ hr{
     .img-fluid{
       padding: 30px 20px ;
     }
+       .foot h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .linkfoot{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2px;
+    }
   }
 
    
